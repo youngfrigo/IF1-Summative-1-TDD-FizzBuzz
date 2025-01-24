@@ -1,9 +1,12 @@
 def fizzbuzz(n):
-    if n % 3 == 0 and n % 5 == 0:
-        return "FizzBuzz"
-    elif n % 3 == 0:
-        return "Fizz"
-    elif n % 5 == 0:
-        return "Buzz"
-    else:
-        return n
+    """ Funciton to implement rules of FizzBuzz
+
+    Args:
+        n (int): input parameter/number
+    """
+    res = ''
+    if n % 3 == 0:
+        res = "Fizz"
+    if n % 5 == 0:
+        res += "Buzz"
+    return(n if not res else res)
